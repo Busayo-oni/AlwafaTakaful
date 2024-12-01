@@ -12,6 +12,13 @@ import Form from './components/Form'
 import Partner from './components/Partner'
 import GetStarted from './components/GetStarted'
 import Footer from './components/Footer'
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import  BoardOfDirectors  from './components/AboutPage/BoardOfDirectors'
+import  OurStory  from './components/AboutPage/OurStory'
+import  AdvisoryTeam  from './components/AboutPage/AdvisoryTeam'
+import  ManagementStaff  from './components/AboutPage/ManagementStaff'
+import  Header  from './components/AboutPage/Header'
 function App() {
 
   return (
@@ -29,6 +36,17 @@ function App() {
     <GetStarted />
     <Footer />
 
+
+ <Router>
+    <Header />
+      <Routes>
+       <Route path="OurStory" element={<OurStory />} />
+        <Route path="BoardOfDirectors" element={<BoardOfDirectors />} />
+       <Route path="AdvisoryTeam" element={ <AdvisoryTeam />} />
+        <Route path="ManagementStaff" element={<ManagementStaff />} />
+    
+      </Routes>
+    </Router>
     </>
   )
 }
