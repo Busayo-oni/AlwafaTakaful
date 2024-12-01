@@ -8,7 +8,7 @@ import Forth from '../assets/forthImage.png'
 const Header = () => {
   return (
     <>
-    <section className='flex flex-col lg:flex-row bg-[#501720] lg:p-[40px_80px] p-10 gap-[50px]  '>
+    <section className='flex flex-col lg:flex-row bg-[#501720] lg:p-[40px_80px] py-[98px] px-10  gap-[50px]  '>
         <div className='lg:w-1/2  flex flex-col items-start justify-center '>
             <p className='font-Matter inline-block border-[1px] font-[400] text-[18px] text-white rounded-[4px] border-[#8a646a] bg-[#43131b] p-[12px] '>&#11088; Your Success is our Pride &#11088;</p>
             <h1 className='font-Matter font-[600]  lg:text-[54px] text-white '>Protect Your Workers' Future with Sharia- Compliant Insurance.</h1>

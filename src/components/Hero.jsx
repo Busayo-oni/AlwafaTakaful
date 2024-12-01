@@ -41,14 +41,14 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="relative w-full lg:h-screen h-[50vw] overflow-hidden">
+    <div className="relative w-full  lg:h-screen h-[50vh] overflow-hidden">
       {/* Slide Container */}
       <div className="relative w-full h-full">
         {slides.map((slide, index) => (
           <div
             key={slide.id}
 
-            className={` absolute h-full flex flex-col overflow-hidden justify-center items-center text-white  transition-all duration-1000 ease-in-out transform ${
+            className={` absolute h-full flex  flex-col overflow-hidden justify-center items-center text-white  transition-all duration-1000 ease-in-out transform ${
                 index === currentSlide
                   ? "translate-x-0 opacity-100 z-0 "
                   : index < currentSlide
@@ -67,7 +67,7 @@ const HeroSection = () => {
       
 
       {/* Indicator Dots */}
-    <div className="absolute lg:bottom-6 bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-1">
+    <div className="absolute lg:bottom-6  bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-1">
     <button
         className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white  p-[1px_4px] border-white border-[1px] rounded-[100%] shadow-lg hover:bg-[#8a646a]"
         onClick={handlePrevSlide}

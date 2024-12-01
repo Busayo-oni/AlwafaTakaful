@@ -1,5 +1,6 @@
 import React from 'react';
 import hero1 from '../../assets/hero1.png';
+import Nav from '../nav';
 import handImage from '../../assets/handImage.png';
 import customerService from '../../assets/customerService.png';
 import save from '../../assets/save.png';
@@ -7,6 +8,7 @@ import save from '../../assets/save.png';
 const OurStory = () => {
   return (
     <div className="">
+      <Nav />
       {/* Use the imported image as a background */}
       <div
         className="relative h-[40vh] md:h-[50vh] lg:h-[70vh] w-full bg-cover bg-center"

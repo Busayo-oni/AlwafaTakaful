@@ -1,6 +1,6 @@
 import React from 'react'
 import hero1 from '../../assets/hero1.png';
-
+import Nav from '../nav';
 import lara from '../../assets/lara.png';
 import Adjohn from '../../assets/Adjohn.png';
 import AdjohnK from '../../assets/AdjohnK.png';
@@ -8,6 +8,7 @@ import AdjohnK from '../../assets/AdjohnK.png';
 const AdvisoryTeam = () => {
   return (
     <div>
+      <Nav />
          {/* Use the imported image as a background */}
       <div
         className="relative h-[40vh] md:h-[50vh] lg:h-[70vh] w-full bg-cover bg-center"
