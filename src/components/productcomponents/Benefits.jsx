@@ -19,10 +19,10 @@ const Benefits = () => {
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="grid grid-cols-2 pb-32 gap-4 relative">
-              <div className="bg-gray-200 rounded-lg  lg:h-64"><img className=' ' src={Image1} alt="" /></div>
+              <div className="bg-gray-200 rounded-lg  lg:h-64 h-full"><img className=' ' src={Image1} alt="" /></div>
               <div className="rounded-lg w-1/3 -z-20 top-10 left-[13rem] mt-8 absolute"><img src={pattern} alt="" /></div>
               <div className="rounded-lg w-[45%] -z-20 top-20 left-[7rem] mt-8 absolute"><img src={rectangle} alt="" /></div>
-              <div className="bg-gray-200 rounded-lg w-1/3 lg:top-48 top-[10rem] left-48 mt-8 absolute"><img src={Image2} alt="" /></div>
+              <div className="bg-gray-200 rounded-lg lg:w-1/3 w-1/2  lg:top-48 top-[7rem] lg:left-48 left-[8rem]  mt-8 absolute"><img src={Image2} alt="" /></div>
             </div>
             <div>
               <p className="text-sm text-[#684B06] mb-2">Overview & Benefits</p>

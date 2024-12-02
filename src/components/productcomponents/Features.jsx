@@ -47,8 +47,8 @@ const Features = () => {
   return (
     <div className="py-16 bg-amber-50">
       <div className="container mx-auto px-4">
-        <div className="text-center px-20 ">
-        <p className="text-sm text-[#684B06] mb-2">Coverage & Benefits</p>
+        <div className="text-center lg:px-20 px-2 ">
+        <p className="text-sm text-[#684B06] mb-2">Overview & Benefits</p>
         <h2 className="text-3xl font-bold mb-4 text-[#212121] ">Important Terms & Conditions</h2>
         <p className="text-[#212121] mb-6">
         Understand the key obligations and responsibilities that come with the Alwafa Group Family Takaful Plan. Ensure full compliance with disclosure requirements and familiarize yourself with the plan’s coverage limits, profit-sharing details, and cooling-off period to make the most of your Takaful protection.              </p>
