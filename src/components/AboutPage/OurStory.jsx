@@ -3,6 +3,7 @@ import hero1 from '../../assets/hero1.png';
 import handImage from '../../assets/handImage.png';
 import customerService from '../../assets/customerService.png';
 import save from '../../assets/save.png';
+import TakafulInsurance from './TakefulInsurance';
 
 const OurStory = () => {
   return (
@@ -97,6 +98,9 @@ const OurStory = () => {
 
 
       </section>
+
+
+      <TakafulInsurance />
       <section className="flex  flex-col items-start lg:flex-row lg:items-center justify-center gap-2 lg:px-14 px-4 py-10">
   <div className="text-center md:text-start lg:text-left mb-8 lg:mb-0">
     <h5 className="text-lg text-[rgba(104,75,6,1)] font-medium mb-2">Stat</h5>
