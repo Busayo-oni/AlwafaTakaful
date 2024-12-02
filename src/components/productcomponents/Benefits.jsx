@@ -3,7 +3,7 @@ import Image1 from '../../assets/Fra1.png'
 import Image2 from '../../assets/Fra2.png'
 import Image3 from '../../assets/graduate.png'
 import pattern from '../../assets/Pattern.png'
-import rectangle from '../../assets/rectangl.png'
+import rectangle from '../../assets/Rectangl.png'
 
 
 const Benefits = () => {
