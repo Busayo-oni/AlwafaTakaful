@@ -1,4 +1,5 @@
 import React from 'react'
+import Nav from '../nav';
 import hero1 from '../../assets/hero1.png';
 import adekunle from '../../assets/adekunle.png';
 import makkiyu from '../../assets/makkiyu.png';
@@ -10,6 +11,7 @@ import johnK from '../../assets/johnK.png';
 const BoardOfDirectors = () => {
   return (
     <div>
+      <Nav />
          {/* Use the imported image as a background */}
       <div
         className="relative h-[40vh] md:h-[50vh] lg:h-[70vh] w-full bg-cover bg-center"

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Logo from '../assets/AlwafaLogo.png'
 import Search from '../assets/search-normal.png'
 import User from '../assets/user.png'
+import { Link } from 'react-router-dom';
+
 
 
 const Nav = () => {
@@ -39,7 +41,7 @@ const Nav = () => {
           className={`font-Matter hover:text-[#501720] hover:font-[600] ${
             activeMenu === "Home" ? "text-[#501720] font-[600] " : ""
           }`}
-          >HOME</button>
+          ><Link to="/HomeAll">HOME</Link> </button>
 
           {/* Services Menu */}
           <div
@@ -57,19 +59,11 @@ const Nav = () => {
               <span className="ml-1">{submenuState.Services ? "▲" : "▼"}</span>
             </button>
             {submenuState.Services && (
-              <div className="absolute top-1/2 mt-2 w-[12rem] bg-white rounded shadow-lg z-50">
-                <a href="#" className="block px-2 py-1 border-b-2 hover:bg-gray-600">
-                  OUR STORY
-                </a>
-                <a href="#" className="block px-2 py-1 border-b-2 hover:bg-gray-600">
-                  BOARD OF DIRECTORS
-                </a>
-                <a href="#" className="block px-2 py-1 border-b-2 hover:bg-gray-600">
-                  ADVISORY TEAM
-                </a>
-                <a href="#" className="block px-2 py-1 border-b-2 hover:bg-gray-600">
-                  MANAGEMENT
-                </a>
+              <div className="absolute top-1/2 mt-2 w-[15rem] bg-white rounded shadow-lg z-50">
+                <Link to="/OurStory"   className="block px-4 py-2 hover:bg-gray-100 ">OUR STORY  </Link> 
+                <Link to="/BoardOfDirectors" className="block px-4 py-2 hover:bg-gray-100 border-t-[0.5px] border-[rgba(80,23,32,1)]">BOARD OF DIRECTORS </Link>
+                <Link to="/AdvisoryTeam" className="block px-4 py-2 hover:bg-gray-100 border-t-[0.5px] border-[rgba(80,23,32,1)]">ADVISORY TEAM </Link>
+                <Link to="/ManagementStaff" className="block px-4 py-2 hover:bg-gray-100 border-t-[0.5px] border-[rgba(80,23,32,1)]">MANAGEMENT STAFF </Link>
                 
               </div>
             )}
@@ -235,7 +229,7 @@ const Nav = () => {
           className={`block px-4 py-2 font-Matter hover:text-[#501720] hover:font-[600] ${
             activeMenu === "Home" ? "text-[#501720] font-[600] " : ""
           }`}
-          >HOME</button>
+          ><Link to="/HomeAll">HOME</Link></button>
 
             {/* Services Menu */}
             <div
@@ -254,18 +248,10 @@ const Nav = () => {
             </button>
             {submenuState.Services && (
               <div className="absolute -top-1 left-[7rem] mt-2  w-[12rem] bg-white rounded shadow-lg z-50">
-                <a href="#" className="block px-2 py-1 border-b-2 hover:bg-gray-600">
-                  OUR STORY
-                </a>
-                <a href="#" className="block px-2 py-1 border-b-2 hover:bg-gray-600">
-                  BOARD OF DIRECTORS
-                </a>
-                <a href="#" className="block px-2 py-1 border-b-2 hover:bg-gray-600">
-                  ADVISORY TEAM
-                </a>
-                <a href="#" className="block px-2 py-1 border-b-2 hover:bg-gray-600">
-                  MANAGEMENT
-                </a>
+                <Link to="/OurStory"   className="block px-4 py-2 hover:bg-gray-100 ">OUR STORY  </Link> 
+                <Link to="/BoardOfDirectors" className="block px-4 py-2 hover:bg-gray-100 border-t-[0.5px] border-[rgba(80,23,32,1)]">BOARD OF DIRECTORS </Link>
+                <Link to="/AdvisoryTeam" className="block px-4 py-2 hover:bg-gray-100 border-t-[0.5px] border-[rgba(80,23,32,1)]">ADVISORY TEAM </Link>
+                <Link to="/ManagementStaff" className="block px-4 py-2 hover:bg-gray-100 border-t-[0.5px] border-[rgba(80,23,32,1)]">MANAGEMENT STAFF </Link>
                 
               </div>
             )}
