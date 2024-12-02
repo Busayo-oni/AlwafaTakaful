@@ -127,9 +127,9 @@ const Nav = () => {
                   </button>
                   {submenuState.SubProduct && (
                     <div className="absolute left-full top-0 mt-0 ml-1 w-[20rem] bg-white rounded shadow-lg">
-                      <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
+                      <Link to="/ProductAll" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         FIRE/SPECIAL PERIL TAKAFUL
-                      </a>
+                      </Link>
                       <Link to="/Education" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         EDUCATION
                       </Link>
@@ -209,7 +209,7 @@ const Nav = () => {
 
         </div>
         <div>
-            <button className="hidden lg:block md:block p-[8px_15px] bg-[#501720] rounded-full text-white font-Matter ">REPORT A CLAIM</button>
+            <button className="hidden lg:block md:block p-[8px_15px] bg-[#501720] rounded-full text-white font-Matter "><Link to="/ClaimSection">REPORT A CLAIM</Link></button>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -296,7 +296,7 @@ const Nav = () => {
                       <Link to="/ProductAll" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         GROUP FAMILY TAKAFUL
                       </Link>
-                      <Link to="/Credit"className="block px-4 py-1 border-b-2 hover:bg-gray-500">
+                      <Link to="/Credit" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         CREDIT TAKAFUL
                       </Link>
                       <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
@@ -378,20 +378,25 @@ const Nav = () => {
           className={`font-Matter py-2 px-4 hover:text-[#501720] hover:font-[600] ${
             activeMenu === "Contact" ? "text-[#501720] font-[600] " : ""
           }`}
-          >CONTACT US</button>
+          ><Link to="/Contact">CONTACT US</Link></button>
           <button 
           onClick={() => setActiveMenu("Cal")}
           className={`block py-2 px-4 font-Matter hover:text-[#501720] hover:font-[600] ${
             activeMenu === "Cal" ? "text-[#501720] font-[600] " : ""
           }`}
-          >TAKAFUL CALCULATOR</button>
+          ><Link to="/Calculator">TAKAFUL CALCULATOR</Link></button>
             <button 
           onClick={() => setActiveMenu("faq")}
           className={`py-2 px-4 font-Matter hover:text-[#501720] hover:font-[600] ${
             activeMenu === "faq" ? "text-[#501720] font-[600] " : ""
           }`}
           >FAQ</button>
+          <div>
+            <button className="block lg:block md:block mx-4 p-[8px_15px] bg-[#501720] rounded-full mb-4 text-white font-Matter "><Link to="/ClaimSection">REPORT A CLAIM</Link></button>
+        </div>
           </div>
+          
+
         </div>
       )}
     </nav>

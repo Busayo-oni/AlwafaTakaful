@@ -14,6 +14,8 @@ import Credit from './components/credit/productAll'
 import Computer from './components/computer/productAll'
 import Motor from './components/motor/productAll'
 import Thankyou from './components/Contact/Thankyou'
+import ClaimSuccess from './components/Claim/claimSuccess'
+import ClaimSection from './components/Claim/claimSection'
 import ContactSection from './components/Contact/ContactSection'
 import Calculator from './components/Calculator/CalculatorSection'
 import Generate from './components/Calculator/Generate'
@@ -44,6 +46,8 @@ function App() {
         <Route path="Thankyou" element={<Thankyou />} />
         <Route path="Calculator" element={<Calculator />} />
         <Route path="Generate" element={<Generate />} />
+        <Route path="ClaimSection" element={<ClaimSection />} />
+        <Route path="ClaimSuccess" element={<ClaimSuccess />} />
 
 
         

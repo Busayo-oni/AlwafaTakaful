@@ -19,7 +19,7 @@ const HomeAll = () => {
     <HeroSection />
     <Score />
     <List />
-    <About />
+    <About /> 
     <Resources />
     <HowTakafulWorks />
     <Testimonial />

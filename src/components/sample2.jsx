@@ -68,8 +68,8 @@ const CardSlider = () => {
             className=" w-full flex-shrink-0  px-4"
             style={{ flexBasis: "33.3333%" }}
           >
-            <div className="lg:w-full overflow-hidden items-start gap- justify-center flex ">
-              <div className="flex items-start justify-start">{card.title}</div>
+            <div className="lg:w-full w-1/2 overflow-hidden items-start gap- justify-center flex ">
+              <div className="flex items-start justify-center">{card.title}</div>
 
             </div>
           </div>

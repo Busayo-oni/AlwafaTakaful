@@ -21,6 +21,7 @@ const Generate = () => {
 
   return (
     <>
+    <Nav />
     <div
         className="lg:h-80 h-[50vh] bg-cover bg-center"
         style={{ backgroundImage: `url(${background})` }}

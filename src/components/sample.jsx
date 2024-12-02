@@ -69,7 +69,7 @@ const CardSlider = () => {
             style={{ flexBasis: "33.3333%" }}
           >
             <div className="">
-              <div className=" ">{card.title}</div>
+              <div className="flex items-start justify-center ">{card.title}</div>
 
             </div>
           </div>
