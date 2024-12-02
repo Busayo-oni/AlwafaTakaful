@@ -14,10 +14,10 @@ const Hero = () => {
               financial protection and reassurance for family members.
             </p>
             <div className="space-x-4">
-              <button className="bg-white text-gray-900 px-6 py-3 rounded-lg font-medium hover:bg-gray-100">
+              <button className="bg-white text-gray-900 px-6 py-3 rounded-full font-medium hover:bg-gray-100">
                 GET A FREE QUOTE
               </button>
-              <button className="border border-white px-6 py-3 rounded-lg font-medium hover:bg-white/10">
+              <button className="border border-white px-6 py-3 rounded-full font-medium hover:bg-white/10">
                 DOWNLOAD BROCHURE
               </button>
             </div>
