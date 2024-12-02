@@ -1,8 +1,12 @@
 import React from 'react'
-
+import Image from "../../assets/calback.jpeg";
+import Footer from './Calfooter'
+import Nav from '../nav'
 import { useNavigate } from "react-router-dom";
 
 const CalculatorSection = () => {
+  const background = Image || "/fallback-image.jpg";
+
   const navigate = useNavigate(); 
 
   const handleGenerate = (event) => {
@@ -12,10 +16,14 @@ const CalculatorSection = () => {
 
   return (
     <div>
+      <Nav />
       <div
-        className="h-64 bg-cover bg-center"
-        style={{ backgroundImage: "url('/calculator.jpg')" }}
-      ></div>
+        className="lg:h-80 h-[50vh] bg-cover bg-center"
+        style={{ backgroundImage: `url(${background})` }}
+      >
+<div className="lg:h-80 h-[50vh] flex items-center justify-center bg-[#501720CC]">
+          <h1 className="font-Matter font-[600] text-white lg:text-[64px] text-[40px] ">Takaful Calculator</h1>
+        </div>      </div>
       <div className="bg-[#FFEED0] min-h-screen flex items-center justify-center py-10">
         <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
           <form className="space-y-4" onSubmit={handleGenerate}>
@@ -93,6 +101,7 @@ const CalculatorSection = () => {
           </form>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

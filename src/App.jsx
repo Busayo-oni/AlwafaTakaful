@@ -9,6 +9,16 @@ import  AdvisoryTeam  from './components/AboutPage/AdvisoryTeam'
 import  ManagementStaff  from './components/AboutPage/ManagementStaff'
 import  Header  from './components/AboutPage/Header'
 import ProductAll from './components/productcomponents/productAll'
+import Education from './components/Education/productAll'
+import Credit from './components/credit/productAll'
+import Computer from './components/computer/productAll'
+import Motor from './components/motor/productAll'
+import Thankyou from './components/Contact/Thankyou'
+import ContactSection from './components/Contact/ContactSection'
+import Calculator from './components/Calculator/CalculatorSection'
+import Generate from './components/Calculator/Generate'
+
+
 import HomeAll from './components/HomeAll';
 function App() {
 
@@ -26,6 +36,20 @@ function App() {
        <Route path="AdvisoryTeam" element={ <AdvisoryTeam />} />
         <Route path="ManagementStaff" element={<ManagementStaff />} />
         <Route path="ProductAll" element={<ProductAll />} />
+        <Route path="Education" element={<Education />} />
+        <Route path="Credit" element={<Credit />} />
+        <Route path="Motor" element={<Motor />} />
+        <Route path="Computer" element={<Computer />} />
+        <Route path="Contact" element={<ContactSection />} />
+        <Route path="Thankyou" element={<Thankyou />} />
+        <Route path="Calculator" element={<Calculator />} />
+        <Route path="Generate" element={<Generate />} />
+
+
+        
+
+
+
 
     
       </Routes>

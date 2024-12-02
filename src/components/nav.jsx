@@ -99,9 +99,9 @@ const Nav = () => {
                       <Link to="/ProductAll" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         GROUP FAMILY TAKAFUL
                       </Link>
-                      <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
+                      <Link to="/Credit" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         CREDIT TAKAFUL
-                      </a>
+                      </Link>
                       <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         ENDOWMENT TAKAFUL
                       </a>
@@ -130,9 +130,9 @@ const Nav = () => {
                       <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         FIRE/SPECIAL PERIL TAKAFUL
                       </a>
-                      <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
+                      <Link to="/Education" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         EDUCATION
-                      </a>
+                      </Link>
                       <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         MARINE CARGO TAKAFUL
                       </a>
@@ -142,9 +142,9 @@ const Nav = () => {
                       <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         MONEY TAKAFUL
                       </a>
-                      <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
+                      <Link to="/Motor" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         COMPREHENSIVE MOTOR TAKAFUL
-                      </a>
+                      </Link>
                       <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         CONSEQUENTIAL LOSE TAKAFUL
                       </a>
@@ -169,6 +169,15 @@ const Nav = () => {
                       <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         BURGLARY PRIVATE
                       </a>
+                      <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
+                        BURGLARY BUSINESS
+                      </a>
+                      <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
+                        PROFESSIONAL INDEMNITY
+                      </a>
+                      <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
+                        ELECTRONIC ALL RISK
+                      </a>
                     </div>
                   )}
                 </div>
@@ -181,7 +190,7 @@ const Nav = () => {
           className={`font-Matter pr-14 hover:text-[#501720] hover:font-[600] ${
             activeMenu === "Contact" ? "text-[#501720] font-[600] " : ""
           }`}
-          >CONTACT US</button>
+          ><Link to="/Contact">CONTACT US</Link></button>
 
 
 
@@ -190,7 +199,7 @@ const Nav = () => {
           className={`font-Matter hover:text-[#501720] hover:font-[600] ${
             activeMenu === "Cal" ? "text-[#501720] font-[600] " : ""
           }`}
-          >TAKAFUL CALCULATOR</button>
+          ><Link to="/Calculator">TAKAFUL CALCULATOR</Link></button>
           <button 
           onClick={() => setActiveMenu("faq")}
           className={`font-Matter hover:text-[#501720] hover:font-[600] ${
@@ -287,9 +296,9 @@ const Nav = () => {
                       <Link to="/ProductAll" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         GROUP FAMILY TAKAFUL
                       </Link>
-                      <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
+                      <Link to="/Credit"className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         CREDIT TAKAFUL
-                      </a>
+                      </Link>
                       <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         ENDOWMENT TAKAFUL
                       </a>
@@ -315,15 +324,15 @@ const Nav = () => {
                   </button>
                   {submenuState.SubProduct && (
                     <div className="absolute left-full top-0 mt-0 ml-1 w-[20rem] bg-white rounded shadow-lg">
-                      <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
+                      <Link to="/ProductAll" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         FIRE/SPECIAL PERIL TAKAFUL
-                      </a>
-                      <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
+                      </Link>
+                      <Link to="/Education" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         EDUCATION
-                      </a>
-                      <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
+                      </Link>
+                      <Link to="/" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         MARINE CARGO TAKAFUL
-                      </a>
+                      </Link>
                       <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         FIDELITY GUARANTEE TAKAFUL
                       </a>

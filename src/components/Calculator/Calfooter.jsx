@@ -1,4 +1,10 @@
 import React from 'react'
+import linkedin from '../../assets/l.png'
+import instagram from '../../assets/i.png'
+import x from '../../assets/x.png'
+import facebook from '../../assets/f.png'
+import youtube from '../../assets/y.png'
+
 
 const Calfooter = () => {
   return (
@@ -10,30 +16,37 @@ const Calfooter = () => {
        
         <div className="flex space-x-4">
         <div className="flex items-center space-x-2">
+        <a href="#" className="hover:underline">
+                  <img
+                    src={facebook}
+                    alt="facebook"
+                    className="w-5"
+                  />
+                </a>
                 <a href="#" className="hover:underline">
                   <img
-                    src="/youtube.png"
+                    src={youtube}
                     alt="Youtube"
                     className="w-5"
                   />
                 </a>
                 <a href="#" className="hover:underline">
                   <img
-                    src="/twitter.png"
+                    src={x}
                     alt="Twitter"
                     className="w-5"
                   />
                 </a>
                 <a href="#" className="hover:underline">
                   <img
-                    src="/ig.png"
+                    src={instagram}
                     alt="Instagram"
                     className="w-5"
                   />
                 </a>
                 <a href="#" className="hover:underline">
                   <img
-                    src="/linkedin.png"
+                    src={linkedin}
                     alt="LinkedIn"
                     className="w-5"
                   />

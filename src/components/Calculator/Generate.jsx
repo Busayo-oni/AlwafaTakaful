@@ -1,7 +1,12 @@
 import React, {useState}from 'react'
+import Image from "../../assets/calback.jpeg";
+import Footer from './Calfooter'
+import Nav from '../nav'
 import { useNavigate } from 'react-router-dom';
 
 const Generate = () => {
+  const background = Image || "/fallback-image.jpg";
+
   const navigate = useNavigate();
 
   const handleDownload =() => {
@@ -15,7 +20,17 @@ const Generate = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#F8EAD8]">
+    <>
+    <div
+        className="lg:h-80 h-[50vh] bg-cover bg-center"
+        style={{ backgroundImage: `url(${background})` }}
+      >
+<div className="lg:h-80 h-[50vh] flex items-center justify-center bg-[#501720CC]">
+          <h1 className="font-Matter font-[600] text-white lg:text-[64px] text-[40px] ">Takaful Calculator</h1>
+        </div>      </div>
+    
+    <div className="min-h-screen py-10 flex items-center justify-center bg-[#F8EAD8]">
+      
       {!showQuote ? (
         <div className="bg-[#FDF6E3] border border-[#4A1A1A] rounded-lg shadow-md p-8 max-w-lg w-full">
           <h1 className="text-[#4A1A1A] text-2xl font-bold mb-4">Generate a Quote</h1>
@@ -61,6 +76,8 @@ const Generate = () => {
         </div>
       )}
     </div>
+    <Footer />
+    </>
   );
 };
 

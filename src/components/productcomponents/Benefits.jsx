@@ -25,14 +25,12 @@ const Benefits = () => {
               <div className="bg-gray-200 rounded-lg w-1/3 lg:top-48 top-[10rem] left-48 mt-8 absolute"><img src={Image2} alt="" /></div>
             </div>
             <div>
-              <p className="text-sm text-[#684B06] mb-2">Coverage & Benefits</p>
+              <p className="text-sm text-[#684B06] mb-2">Overview & Benefits</p>
               <h2 className="text-3xl font-bold mb-4 text-[#212121] ">
                 Comprehensive Protection Tailored for You and Yours
               </h2>
               <p className="text-[#212121] mb-6">
-                A Shariah-compliant plan designed to provide financial protection for groups 
-                under a single Master Certificate.
-              </p>
+              The Alwafa Group Family Takaful Plan is a Shariah-compliant, yearly renewable Takaful product designed to provide financial protection for groups under a single Master Certificate. It offers comprehensive coverage in the event of death from any cause, ensuring the financial security of the member’s family or dependents. The plan also includes optional riders such as total and permanent disability, personal accident benefits, burial expenses, and critical illness, allowing for customized protection. Contributions are based on the member’s age, occupation, and group size, and the plan is renewable annually up to age 69.              </p>
               <div className="space-y-3">
                 <b className="text-[#212121] mb-6"><img src={Image3} className='inline pr-4' alt="" />Key Benefits</b>
                 {benefits.map((benefit, index) => (
