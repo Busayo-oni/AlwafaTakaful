@@ -1,6 +1,7 @@
 import React from 'react'
 import hero1 from '../../assets/hero1.png';
 import Nav from '../nav';
+import Footer from '../Footer'
 import lara from '../../assets/lara.png';
 import Adjohn from '../../assets/Adjohn.png';
 import AdjohnK from '../../assets/AdjohnK.png';
@@ -53,6 +54,7 @@ const AdvisoryTeam = () => {
   
 </div>
    </div>
+   <Footer />
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import hero1 from '../../assets/hero1.png';
 import Nav from '../nav';
+import Footer from '../Footer'
 import handImage from '../../assets/handImage.png';
 import customerService from '../../assets/customerService.png';
 import save from '../../assets/save.png';
@@ -136,7 +137,7 @@ const OurStory = () => {
     <p className="text-sm text-center">Claims Processed</p>
   </div>
 </section>
-
+<Footer />
     </div>
   );
 };

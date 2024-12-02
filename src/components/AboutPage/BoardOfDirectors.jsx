@@ -1,5 +1,6 @@
 import React from 'react'
 import Nav from '../nav';
+import Footer from '../Footer'
 import hero1 from '../../assets/hero1.png';
 import adekunle from '../../assets/adekunle.png';
 import makkiyu from '../../assets/makkiyu.png';
@@ -56,6 +57,7 @@ const BoardOfDirectors = () => {
   
 </div>
    </div>
+   <Footer />
     </div>
   )
 }

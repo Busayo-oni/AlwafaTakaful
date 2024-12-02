@@ -96,9 +96,9 @@ const Nav = () => {
                   </button>
                   {submenuState.SubProducts && (
                     <div className="absolute left-full top-0 mt-0 ml-1 w-[15rem] bg-white rounded shadow-lg">
-                      <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
+                      <Link to="/ProductAll" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         GROUP FAMILY TAKAFUL
-                      </a>
+                      </Link>
                       <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         CREDIT TAKAFUL
                       </a>
@@ -284,9 +284,9 @@ const Nav = () => {
                   </button>
                   {submenuState.SubProducts && (
                     <div className="absolute left-full top-0  mt-0 ml-1 w-[15rem] bg-white rounded shadow-lg">
-                      <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
+                      <Link to="/ProductAll" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         GROUP FAMILY TAKAFUL
-                      </a>
+                      </Link>
                       <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         CREDIT TAKAFUL
                       </a>

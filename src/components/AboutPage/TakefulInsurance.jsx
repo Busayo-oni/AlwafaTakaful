@@ -91,7 +91,7 @@ const TakafulInsurance = () => {
         </div>
 
         {/* Right Section */}
-        <div className="relative h-[72%] w-[100%] transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+        <div className="relative h-[72%] lg:w-[100%] text-center w-[80%] transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
           <img
             src={ hero1 }
             alt="Coins in a jar"

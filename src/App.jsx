@@ -8,6 +8,7 @@ import  OurStory  from './components/AboutPage/OurStory'
 import  AdvisoryTeam  from './components/AboutPage/AdvisoryTeam'
 import  ManagementStaff  from './components/AboutPage/ManagementStaff'
 import  Header  from './components/AboutPage/Header'
+import ProductAll from './components/productcomponents/productAll'
 import HomeAll from './components/HomeAll';
 function App() {
 
@@ -24,6 +25,8 @@ function App() {
         <Route path="BoardOfDirectors" element={<BoardOfDirectors />} />
        <Route path="AdvisoryTeam" element={ <AdvisoryTeam />} />
         <Route path="ManagementStaff" element={<ManagementStaff />} />
+        <Route path="ProductAll" element={<ProductAll />} />
+
     
       </Routes>
     </Router>

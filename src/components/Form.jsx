@@ -12,7 +12,7 @@ const Form = () => {
     const backbg = Backg
   return (
     <>
-    <section className='font-Matter text-center text-white lg:p-[50px] p-6 '
+    <section className='font-Matter text-center text-white lg:p-[50px] bg-no-repeat bg-cover p-6 '
     style={{backgroundImage: `url(${backbg})` }}
     >
         <h1 className='text-[55px] font-[500] p-[] '>Stay Updated with Alwafa Takaful</h1>
