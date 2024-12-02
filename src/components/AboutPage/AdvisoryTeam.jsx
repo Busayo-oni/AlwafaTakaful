@@ -4,7 +4,7 @@ import Nav from '../nav';
 import Footer from '../Footer'
 import lara from '../../assets/lara.png';
 import Adjohn from '../../assets/AdJohn.png';
-import AdjohnK from '../../assets/AdJohnK.png';
+import AdjohnK from '../../assets/AdjohnK.png';
 
 const AdvisoryTeam = () => {
   return (
