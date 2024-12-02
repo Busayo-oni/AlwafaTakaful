@@ -3,8 +3,8 @@ import hero1 from '../../assets/hero1.png';
 import Nav from '../nav';
 import Footer from '../Footer'
 import lara from '../../assets/lara.png';
-import Adjohn from '../../assets/Adjohn.png';
-import AdjohnK from '../../assets/AdjohnK.png';
+import Adjohn from '../../assets/AdJohn.png';
+import AdjohnK from '../../assets/AdJohnK.png';
 
 const ManagementStaff = () => {
   return (
