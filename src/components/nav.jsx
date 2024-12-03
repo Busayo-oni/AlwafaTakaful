@@ -133,17 +133,24 @@ const Nav = () => {
                       <Link to="/Education" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         EDUCATION
                       </Link>
-                      <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
+
+                       <Link to="/MarineAll" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         MARINE CARGO TAKAFUL
-                      </a>
-                      <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
-                        FIDELITY GUARANTEE TAKAFUL
-                      </a>
-                      <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
-                        MONEY TAKAFUL
-                      </a>
+                      </Link>
+
+                      <Link to="/FidelityAll" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
+                         FIDELITY GUARANTEE TAKAFUL
+                      </Link>
+                     
+                      <Link to="/MoneyAll" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
+                         MONEY TAKAFUL
+                      </Link>
+                      
                       <Link to="/Motor" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         COMPREHENSIVE MOTOR TAKAFUL
+                      </Link>
+                       <Link to="/TravelAll" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
+                        TRAVEL TAKAFUL
                       </Link>
                       <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         CONSEQUENTIAL LOSE TAKAFUL
@@ -157,9 +164,8 @@ const Nav = () => {
                       <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         GROUP PERSONAL ACCIDENT 
                       </a>
-                      <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
-                        TRAVEL TAKAFUL
-                      </a>
+                     
+                      
                       <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         PUBLIC LIABILITY TAKAFUL
                       </a>
