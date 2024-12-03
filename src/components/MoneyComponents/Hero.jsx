@@ -1,5 +1,5 @@
 import React from 'react';
-import Moneyhero from '../../assets/Moneyhero.jpeg'
+import Moneyhero from '../../assets/moneyhero.jpeg'
 const Hero = () => {
   const HeroBackgr = Moneyhero
     return (
