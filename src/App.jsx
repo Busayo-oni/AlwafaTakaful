@@ -23,7 +23,7 @@ import Faq from './components/Faq';
 import FidelityAll from './components/FidelityComponents/FidelityAll';
 import TravelAll from './components/TravelComponents/TravelAll';
 import MoneyAll from './components/MoneyComponents/MoneyAll';
-import MarineAll from './components/Marinecomponents/MarineAll'
+import MarineAll from './components/MarineComponents/MarineAll'
 
 import HomeAll from './components/HomeAll';
 function App() {
