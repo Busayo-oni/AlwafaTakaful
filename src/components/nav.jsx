@@ -149,6 +149,9 @@ const Nav = () => {
                       <Link to="/Motor" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         COMPREHENSIVE MOTOR TAKAFUL
                       </Link>
+                       <Link to="/TravelAll" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
+                        TRAVEL TAKAFUL
+                      </Link>
                       <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         CONSEQUENTIAL LOSE TAKAFUL
                       </a>
@@ -161,6 +164,7 @@ const Nav = () => {
                       <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         GROUP PERSONAL ACCIDENT 
                       </a>
+                     
                       
                       <a href="#" className="block px-4 py-1 border-b-2 hover:bg-gray-500">
                         PUBLIC LIABILITY TAKAFUL
