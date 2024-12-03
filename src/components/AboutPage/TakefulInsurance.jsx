@@ -102,7 +102,7 @@ const TakafulInsurance = () => {
         
 
 {/*CustomerCard */}
-    <div className="bg-white p-4 rounded-lg shadow-lg w-[70%] absolute bottom-4 right-[-40px]">
+    <div className="bg-white p-4 rounded-lg shadow-lg w-[70%] absolute bottom-0 right-[-40px]">
       {/* Header */}
       <div className="flex justify-between items-start">
         <div>

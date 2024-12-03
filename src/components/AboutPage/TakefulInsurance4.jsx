@@ -1,10 +1,9 @@
 import React from "react";
 import hero1 from '../../assets/Alfacar.png'
-import save from '../../assets/save.png'
-import healthicons from '../../assets/healthicons.png'
-import streamline from '../../assets/streamline.png'
-import scalability from '../../assets/scalability.png'
-import learnMoreButton from '../../assets/learnMoreButton.png'
+import save from '../../assets/helt.png'
+import healthicons from '../../assets/death.png'
+import streamline from '../../assets/period.png'
+import scalability from '../../assets/money.png'
 import Ellipse2 from '../../assets/Ellipse2.png'
 import Ellipse3 from '../../assets/Ellipse3.png'
 import Ellipse4 from '../../assets/Ellipse4.png'
@@ -26,7 +25,7 @@ const TakafulInsurance = () => {
           <div className="grid sm:grid-cols-2 gap-4">
             <div className="p-4 border rounded-lg shadow-sm hover:shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
               <div className="bg-[rgba(243,194,130,1)] text-white w-10 h-10 rounded-full flex items-center justify-center text-2xl font-bold mb-2">
-                   <img src={streamline} alt="Claims Processed" className="w-[50%] " />
+                   <img src={streamline} alt="Claims Processed" className="w-full " />
                   </div>
               <div className="flex items-center mb-2">
                
@@ -43,7 +42,7 @@ const TakafulInsurance = () => {
             
             <div className="p-4 border rounded-lg shadow-sm hover:shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
                <div className="bg-[rgba(243,194,130,1)] text-white w-10 h-10 rounded-full flex items-center justify-center text-2xl font-bold mb-2">
-                   <img src={save} alt="Claims Processed" className="w-[50%] " />
+                   <img src={save} alt="Claims Processed" className="w-full " />
                   </div>
               <div className="flex items-center mb-2">
                
@@ -55,7 +54,7 @@ const TakafulInsurance = () => {
             </div>
             <div className="p-4 border rounded-lg shadow-sm hover:shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
               <div className="bg-[rgba(243,194,130,1)] text-white w-10 h-10 rounded-full flex items-center justify-center text-2xl font-bold mb-2">
-                   <img src={healthicons} alt="Claims Processed" className="w-[50%] " />
+                   <img src={healthicons} alt="Claims Processed" className="full " />
                   </div>
               <div className="flex items-center mb-2">
                
@@ -66,7 +65,7 @@ const TakafulInsurance = () => {
             </div>
             <div className="p-4 border rounded-lg shadow-sm hover:shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
               <div className=" bg-[rgba(243,194,130,1)] text-white w-10 h-10 rounded-full flex items-center justify-center text-2xl font-bold mb-2">
-                   <img src={scalability} alt="Claims Processed" className="w-[50%] "/>
+                   <img src={scalability} alt="Claims Processed" className="w-full "/>
                   </div>
               <div className="flex items-center mb-2">
                 
@@ -90,7 +89,7 @@ const TakafulInsurance = () => {
         
 
 {/*CustomerCard */}
-    <div className="bg-white p-4 rounded-lg shadow-lg w-[70%] absolute bottom-4 right-[-40px]">
+    <div className="bg-white p-4 rounded-lg shadow-lg w-[70%] absolute bottom-0 right-[-40px]">
       {/* Header */}
       <div className="flex justify-between items-start">
         <div>

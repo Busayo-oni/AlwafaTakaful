@@ -1,10 +1,9 @@
 import React from "react";
 import hero1 from '../../assets/child.png'
-import save from '../../assets/save.png'
-import healthicons from '../../assets/healthicons.png'
-import streamline from '../../assets/streamline.png'
-import scalability from '../../assets/scalability.png'
-import learnMoreButton from '../../assets/learnMoreButton.png'
+import save from '../../assets/healthand.png'
+import healthicons from '../../assets/period.png'
+import streamline from '../../assets/helt.png'
+import scalability from '../../assets/money.png'
 import Ellipse2 from '../../assets/Ellipse2.png'
 import Ellipse3 from '../../assets/Ellipse3.png'
 import Ellipse4 from '../../assets/Ellipse4.png'
@@ -26,7 +25,7 @@ const TakafulInsurance = () => {
           <div className="grid sm:grid-cols-2 gap-4">
             <div className="p-4 border rounded-lg shadow-sm hover:shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
               <div className="bg-[rgba(243,194,130,1)] text-white w-10 h-10 rounded-full flex items-center justify-center text-2xl font-bold mb-2">
-                   <img src={streamline} alt="Claims Processed" className="w-[50%] " />
+                   <img src={streamline} alt="Claims Processed" className="w-full " />
                   </div>
               <div className="flex items-center mb-2">
                
@@ -38,43 +37,42 @@ const TakafulInsurance = () => {
               </div>
               <p className="text-sm text-gray-500">
               At the end of 1/3 of the chosen term, 25% of the PIA balance is payable, followed by another 25% at 2/3 of the term. The balance, along with all accumulated profits, is payable at maturity, including the total due in the PIA and returns on investment.              </p>
-              <img src={learnMoreButton} className="w-[80%] mt-4 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"/>
             </div>
             
             <div className="p-4 border rounded-lg shadow-sm hover:shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
                <div className="bg-[rgba(243,194,130,1)] text-white w-10 h-10 rounded-full flex items-center justify-center text-2xl font-bold mb-2">
-                   <img src={save} alt="Claims Processed" className="w-[50%] " />
+                   <img src={save} alt="Claims Processed" className="w-full " />
                   </div>
               <div className="flex items-center mb-2">
                
                 <h3 className="text-lg font-semibold ">Supplementary Benefits</h3>
               </div>
               <p className="text-sm text-gray-500">
-              In the event of death or total permanent disability while the certificate is active, 10% of the PIA balance will be paid annually to the beneficiary until one year before the maturity date.                <img src={learnMoreButton} className="w-[80%] mt-4 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"/>
+              In the event of death or total permanent disability while the certificate is active, 10% of the PIA balance will be paid annually to the beneficiary until one year before the maturity date.     
               </p>
             </div>
             <div className="p-4 border rounded-lg shadow-sm hover:shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
               <div className="bg-[rgba(243,194,130,1)] text-white w-10 h-10 rounded-full flex items-center justify-center text-2xl font-bold mb-2">
-                   <img src={healthicons} alt="Claims Processed" className="w-[50%] " />
+                   <img src={healthicons} alt="Claims Processed" className="w-full " />
                   </div>
               <div className="flex items-center mb-2">
                
                 <h3 className="text-lg font-semibold ">Period of Takaful/ Sum Covered</h3>
               </div>
               <p className="text-sm text-gray-500">
-              Participants can choose a plan duration ranging from a minimum of 6 years to 18 years or more, depending on their age at entry. The plan includes an equal number of paid and unpaid Takaful installments from the start until the maturity date.                <img src={learnMoreButton} className="w-[80%] mt-4 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"/>
+              Participants can choose a plan duration ranging from a minimum of 6 years to 18 years or more, depending on their age at entry. The plan includes an equal number of paid and unpaid Takaful installments from the start until the maturity date. 
               </p>
             </div>
             <div className="p-4 border rounded-lg shadow-sm hover:shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
               <div className=" bg-[rgba(243,194,130,1)] text-white w-10 h-10 rounded-full flex items-center justify-center text-2xl font-bold mb-2">
-                   <img src={scalability} alt="Claims Processed" className="w-[50%] "/>
+                   <img src={scalability} alt="Claims Processed" className="w-full "/>
                   </div>
               <div className="flex items-center mb-2">
                 
                 <h3 className="text-lg font-semibold ">Installments amount / Mode of Payment</h3>
               </div>
               <p className="text-sm text-gray-500 ">
-              The Takaful contribution is based on the participant's income, with a minimum monthly installment of N5,000, payable through flexible options such as monthly, quarterly, semi-annually, annually, or as a single contribution.                <img src={learnMoreButton} className="w-[80%] mt-4 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"/>
+              The Takaful contribution is based on the participant's income, with a minimum monthly installment of N5,000, payable through flexible options such as monthly, quarterly, semi-annually, annually, or as a single contribution.               
               </p>
             </div>
           </div>
@@ -92,7 +90,7 @@ const TakafulInsurance = () => {
         
 
 {/*CustomerCard */}
-    <div className="bg-white p-4 rounded-lg shadow-lg w-[70%] absolute bottom-4 right-[-40px]">
+    <div className="bg-white p-4 rounded-lg shadow-lg w-[70%] absolute bottom-0 right-[-40px]">
       {/* Header */}
       <div className="flex justify-between items-start">
         <div>
