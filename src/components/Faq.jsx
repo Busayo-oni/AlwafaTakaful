@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
+import Nav from './nav';
+import Image from '../assets/covered.jpeg';
+import Footer from './Footer';
 
 const Faq = () => {
-  const [activeCategory, setActiveCategory] = useState('General FAQ');
-  const [expanded, setExpanded] = useState(null);
+  const background = Image
+  const [expandedQuestions, setExpandedQuestions] = useState({});
+  const [activeCategory, setActiveCategory] = useState(null); // To track the active sidebar category
 
   const categories = [
     'General FAQ',
@@ -20,143 +24,143 @@ const Faq = () => {
 
   const faqs = {
     'General FAQ': [
-      'What is Takaful Insurance?',
-      'How Do I File a Claim?',
-      'What Are the Investment Options?',
-      'What Are the Coverage Options for Family Takaful?',
-      'Can I Customize My Policy with Additional Riders?',
+      { question: 'What is Takaful Insurance?', answer: 'Takaful is a Shariah-compliant insurance system...' },
+      { question: 'How Do I File a Claim?', answer: 'To file a claim, you need to submit...' },
+      { question: 'What Are the Investment Options?', answer: 'Investment options include equity...' },
+      { question: 'What Are the Coverage Options for Family Takaful?', answer: 'Family Takaful offers coverage for...' },
+      { question: 'Can I Customize My Policy with Additional Riders?', answer: 'Yes, additional riders can be added...' },
     ],
     'Computer Takaful': [
-      'What is Alwafa Computer All Risk?',
-      'What types of electronic equipment are covered?',
-      'How is the Takaful contribution calculated?',
-      'What does All Risk coverage means?',
-      'What are the exclusions under this policy',
+      { question: 'What is Alwafa Computer All Risk?', answer: 'This policy covers comprehensive...' },
+      { question: 'What types of electronic equipment are covered?', answer: 'Covered equipment includes...' },
+      { question: 'How is the Takaful contribution calculated?', answer: 'Contributions are based on...' },
+      { question: 'What does All Risk coverage mean?', answer: 'All Risk means coverage against...' },
+      { question: 'What are the exclusions under this policy?', answer: 'Exclusions include intentional damage...' },
     ],
     'Family Takaful': [
-      'What is Family Takaful?',
-      'What Are the Coverage Options for Family Takaful?',
-      'What sre the covers/benefits provided to the member?',
-      'How much contribution does a member has to pay?',
-      'What are the fees and charges i have to pay?',
-      'Can a member opt out of the ceritificate?',
-      'What does a member need to do if there are changes to their contact details?',
+      { question: 'What is Family Takaful?', answer: 'Family Takaful is a long-term plan...' },
+      { question: 'What Are the Coverage Options for Family Takaful?', answer: 'Options include...' },
+      { question: 'What are the covers/benefits provided to the member?', answer: 'Members receive benefits such as...' },
+      { question: 'How much contribution does a member have to pay?', answer: 'Contributions depend on age...' },
+      { question: 'What are the fees and charges I have to pay?', answer: 'Fees include...' },
     ],
     'Money Takaful': [
-      'What is the Alwafa Money Takaful scheme about?',
-      'What does this scheme cover?',
-      'How long does the coverage last?',
-      'How much is the contribution i need to pay?',
-      'What fees and charges apply to this policy?',
-      'How is the surplus distributed?',
+      { question: 'What is the Alwafa Money Takaful scheme about?', answer: 'This scheme offers protection for...' },
+      { question: 'What does this scheme cover?', answer: 'Coverage includes theft...' },
+      { question: 'How long does the coverage last?', answer: 'Coverage lasts for one year...' },
+      { question: 'How much is the contribution I need to pay?', answer: 'Contributions depend on...' },
+      { question: 'What fees and charges apply to this policy?', answer: 'Fees include...' },
     ],
     'Private Car Takaful': [
-      'What is the Alwafa Comprehensive Private Car Takaful?',
-      'What types of Coverage are included in this Takaful Policy?' ,
-      'Are there any exclusions i should be aware of?',
-      'What does a member need to do if there are changes in their contact details?',
-      'Where can i get further information?',
+      { question: 'What is the Alwafa Comprehensive Private Car Takaful?', answer: 'This plan covers accidents...' },
+      { question: 'What types of Coverage are included in this Takaful Policy?', answer: 'Coverage includes theft...' },
+      { question: 'Are there any exclusions I should be aware of?', answer: 'Exclusions include...' },
+      { question: 'What does a member need to do if there are changes in their contact details?', answer: 'Members should inform...' },
     ],
     'Education Takaful': [
-        'What is Alwafa Endowment Plan?',
-        'How does the contribution work?',
-        'Are they any Special Takaful Clause?',
-        'What happens in the event of the loss of life or total permanent disability?',
-        'What are the term options for the Alwafa Endowment Plan?',
-        'Can a member opt out of the Certificate?',
-        'What does a member need to do f there are changes to their contact details?',
+      { question: 'What is Alwafa Endowment Plan?', answer: 'This plan supports long-term savings...' },
+      { question: 'How does the contribution work?', answer: 'Contributions are calculated...' },
+      { question: 'What happens in the event of loss of life or total permanent disability?', answer: 'In such events...' },
     ],
     'Travel Takaful': [
-        'What is ALWAFA Travel Takaful Policy?',
-        'What benefits are covered under this policy?',
+      { question: 'What is ALWAFA Travel Takaful Policy?', answer: 'This policy provides coverage for...' },
+      { question: 'What benefits are covered under this policy?', answer: 'Benefits include medical...' },
     ],
     'Fidelity Takaful': [
-        'What is the Alwafa Fidelity Guarantee Takaful?',
-        'What type of losses does this Takaful cover?',
-        'Are there any fees or charges involved?',
-        'How is the contribution determined?',
-        'Where can i get further information?',
+      { question: 'What is the Alwafa Fidelity Guarantee Takaful?', answer: 'This plan covers losses...' },
+      { question: 'What type of losses does this Takaful cover?', answer: 'Covered losses include...' },
+      { question: 'Are there any fees or charges involved?', answer: 'Fees depend on...' },
     ],
     'Marine Takaful': [
-        'What is Alwafa Marine Cargo Takaful?',
-        'What types of coverage are availble under this scheme?',
-        'How do i determine my contribution amount?',
-        'What are the key terms i should be aware of?',
+      { question: 'What is Alwafa Marine Cargo Takaful?', answer: 'This policy covers marine shipments...' },
+      { question: 'What types of coverage are available under this scheme?', answer: 'Coverage includes...' },
     ],
-    'Motor Takaful':[
-        'What is Alwafa Endowment Plan?',
-        'How does contribution work?',
-        'Are there any Special Takaful Clause?',
-        'What happens in the event of loss of life or total permanent disability?',
-        'What are the term options for the Alwafa Endowment Plan?',
-        'Can a member opt out of the Ceritificate?',
-        'What does a member need to do if there are changes to their contact details?',
+    'Motor Takaful': [
+      { question: 'What is Alwafa Endowment Plan?', answer: 'This plan provides comprehensive...' },
+      { question: 'How does the contribution work?', answer: 'Contributions are based on...' },
     ],
     'Credit Takaful': [
-       'What is Alwafa Endowment Plan?',
-        'How does contribution work?',
-        'Are there any Special Takaful Clause?',
-        'What happens in the event of loss of life or total permanent disability?',
-        'What are the term options for the Alwafa Endowment Plan?',
-        'Can a member opt out of the Ceritificate?',
-        'What does a member need to do if there are changes to their contact details?', 
-    ]
-    
+      { question: 'What is Alwafa Endowment Plan?', answer: 'This plan helps manage credit risks...' },
+      { question: 'How does the contribution work?', answer: 'Contributions depend on...' },
+    ],
+  };
+
+  const toggleQuestion = (category, index) => {
+    setExpandedQuestions((prevState) => ({
+      ...prevState,
+      [category]: prevState[category] === index ? null : index,
+    }));
+  };
+
+  const handleSidebarClick = (category) => {
+    setActiveCategory(category);
+    const element = document.getElementById(category.replace(/\s+/g, '-').toLowerCase());
+    element.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
     <>
-   
-    <div className="min-h-screen bg-[#FFEED0] p-8">
-      <h1 className="text-center text-3xl font-semibold text-gray-800 mb-10">
-        Frequently Asked Questions
-      </h1>
-      <div className="flex space-x-8">
-      
-        <div className="w-1/4 p-12px gap-12 bg-white shadow-lg rounded-lg p-4">
-          <ul className="space-y-2">
-            {categories.map((category) => (
-              <li
-                key={category}
-                className={`p-2 cursor-pointer rounded-lg ${
-                  activeCategory === category ? 'bg-gray-200' : ''
-                }`}
-                onClick={() => setActiveCategory(category)}
-              >
-                {category}
-              </li>
-            ))}
-          </ul>
+      <Nav />
+      <div
+        className="lg:h-80 h-[50vh] bg-cover bg-center "
+        style={{ backgroundImage: `url(${background})` }}
+      >
+        <div className="lg:h-80 h-[50vh] flex items-center justify-center bg-[#50172080]">
+          <h1 className="font-Matter font-[600] text-white lg:text-[64px] text-[40px] ">Frequently Asked Questions</h1>
         </div>
+      </div>
+      <div className="min-h-screen bg-[#FFEED0] p-8">
+        <h1 className="text-center text-4xl font-bold text-gray-800 mb-12">
+          Frequently Asked Questions
+        </h1>
+        <div className="flex flex-col md:flex-row gap-8">
+          {/* Sidebar */}
+          <div className="w-full md:w-1/4 border-2 border-[#501720] shadow-lg rounded-lg p-4 sticky top-8 h-max">
+            <ul className="space-y-3">
+              {categories.map((category) => (
+                <li key={category}>
+                  <button
+                    onClick={() => handleSidebarClick(category)}
+                    className={`block w-full text-[#501720] p-2 text-left rounded-lg font-semibold ${
+                      activeCategory === category ? 'bg-white' : 'hover:bg-gray-100'
+                    }`}
+                  >
+                    {category}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-      
-        <div className="flex-1 bg-white shadow-lg rounded-lg p-6">
-          <h2 className="text-2xl font-semibold mb-4">{activeCategory}</h2>
-          <div className="space-y-4">
-            {faqs[activeCategory]?.map((faq, index) => (
-              <div key={index}>
-                <button
-                  className="w-full text-left py-2 px-4 bg-gray-100 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-300"
-                  onClick={() =>
-                    setExpanded(expanded === index ? null : index)
-                  }
-                >
-                  {faq}
-                </button>
-                {expanded === index && (
-                  <div className="mt-2 px-4 py-2 bg-gray-50 rounded-lg">
-                    <p className="text-sm text-gray-700">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Pellentesque ac ligula nec dui ultrices interdum.
-                    </p>
-                  </div>
-                )}
+          {/* FAQ Content */}
+          <div className="flex-1 shadow-lg rounded-lg p-6">
+            {categories.map((category) => (
+              <div key={category} id={category.replace(/\s+/g, '-').toLowerCase()} className="mb-12">
+                <h2 className="text-2xl font-semibold mb-6">{category}</h2>
+                <div className="space-y-6">
+                  {faqs[category]?.map((faq, index) => (
+                    <div key={index}>
+                      <button
+                        className="w-full flex justify-between items-center text-left py-2 px-4 bg-gray-100 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-300"
+                        onClick={() => toggleQuestion(category, index)}
+                      >
+                        <span>{faq.question}</span>
+                        <span className="text-gray-500">{expandedQuestions[category] === index ? '−' : '+'}</span>
+                      </button>
+                      {expandedQuestions[category] === index && (
+                        <div className="mt-2 px-4 py-2 bg-gray-50 rounded-lg">
+                          <p className="text-sm text-gray-700">{faq.answer}</p>
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
         </div>
       </div>
-    </div>
+      <Footer />
     </>
   );
 };

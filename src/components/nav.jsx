@@ -205,7 +205,7 @@ const Nav = () => {
           className={`font-Matter hover:text-[#501720] hover:font-[600] ${
             activeMenu === "faq" ? "text-[#501720] font-[600] " : ""
           }`}
-          >FAQ</button>
+          ><Link to="/Faq">FAQ</Link></button>
 
         </div>
         <div>
@@ -390,7 +390,7 @@ const Nav = () => {
           className={`py-2 px-4 font-Matter hover:text-[#501720] hover:font-[600] ${
             activeMenu === "faq" ? "text-[#501720] font-[600] " : ""
           }`}
-          >FAQ</button>
+          ><Link to="/Faq">FAQ</Link></button>
           <div>
             <button className="block lg:block md:block mx-4 p-[8px_15px] bg-[#501720] rounded-full mb-4 text-white font-Matter "><Link to="/ClaimSection">REPORT A CLAIM</Link></button>
         </div>
